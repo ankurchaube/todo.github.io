@@ -1,0 +1,150 @@
+h1{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 3rem;
+    font-family: monospace;
+    font-weight: 900;
+    color: yellow;
+    margin-bottom: 0%;
+    }
+    #heading{
+        margin-bottom: 0%;
+    }
+    body{
+        background-color: blueviolet;
+    }
+    /* complete to do box */
+    #box{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3%;
+        width: 70vw;
+        border-radius: 25px;
+        box-shadow: 0px 0px 14px 7px grey;
+        background-color: white;
+        padding: 1%;
+    }
+    
+    /* Input Container */
+    #input-container{
+        
+        padding: 2%;
+        margin: 2%;
+        border-radius: 25px;
+         font-size: 2em;
+         background-color: ghostwhite;
+        border: none;
+        
+    }
+    #input-container:hover{
+        background-color: rgba(182, 176, 176, 0.548);
+    }
+    #input{
+        width: auto;
+        border: none;
+        font-size: inherit;
+        background-color:inherit;
+    }
+    #input :checked{
+        border: none;
+    }
+    .label{
+        display: inline-block;
+    }
+    #add{
+        float: right ;
+        cursor: pointer;
+    }
+    /* clear and complete buttons */
+    #clear-complete{
+        font-size: 1.2rem;
+        width: 100%;;
+        margin: 0%;;
+        
+        font-family: monospace;
+        color: rgb(90, 14, 71);
+    }
+    #clear-all{
+        float: right;
+        cursor: pointer;
+        
+    }
+    #complete-all{
+        cursor: pointer;
+    }
+    /* Task List */
+    #all-task{
+        font-size: 2rem;
+        font-family: sans-serif;
+        letter-spacing: 2px;
+    }
+    #list li{
+        transition: all 0.5s;
+        width: 100%;
+        margin-top: 1%;
+    }
+    .delete {
+        float: right;
+        margin-right: 7%;
+        font-size: 1.5rem;
+        padding: 1%;
+        color: black !important;
+    
+        /* display: none; */
+    }
+    #list li:hover{
+        color: rgb(206, 201, 201);
+        cursor: pointer;
+        
+    }
+    
+    .delete:hover{
+        background-color: rgb(223, 86, 86);
+        z-index: 1;
+    }
+    
+    #list li.checked{
+        text-decoration: line-through;
+    }
+    /* Last section of task Info */
+    #task-info{
+        font-family: monospace;
+        color: rgb(179, 175, 175);
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    #task-info p{
+    display: inline;
+    }
+    #task-type ul{
+        display: inline;
+        
+    }
+    #task-type li{
+        display: inline;
+        cursor: pointer;
+    }
+    @media screen and (max-width: 600px) {
+        #box{
+            height: auto;
+            width: auto;
+        }
+        #input-container #file{
+            display: none;
+        }
+        #input-container{
+            /* max-width: inherit; */
+            font-size: .8rem;
+        }
+        #clear-all{
+            /* display: block; */
+        }
+        #complete-all{
+            /* display: block; */
+            float: none;
+        }
+        hr{
+            display: block;
+        }
+      }
